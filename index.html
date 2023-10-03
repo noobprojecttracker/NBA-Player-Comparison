@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+    <div class="main">
+
+        <!--Create the title-->
+        <h1 id="title">Player Comparison</h1>
+        <h1 id="title2">2022-2023</h1>
+
+        <div class="input" id="gap"> 
+            <!--Create the 2 player name inputs-->
+            <input id="player1" type="text" placeholder="Player 1 name" class="autocomplete" spellcheck="false">
+                <ul id="comp1" class="autocomplete-list">
+                </ul>
+        </div>
+
+        <div class="input"> 
+            <input id="player2" type="text" placeholder="Player 2 name" class="autocomplete" spellcheck="false">
+                <ul id="comp2" class="autocomplete-list">
+                </ul>
+        </div>
+        
+
+        <!--Create button to submit player names-->
+        <br>
+        <button id="button" onclick="findNames()">Compare</button>
+
+
+        <!--Display player names-->
+        <div class="playerNames">
+            <p id="name1">Player 1</p>
+            <p id="name2">Player 2</p>
+        </div>
+
+
+        <!--Display player stats-->
+        
+        <div class="stats">
+            <br>
+            <img id="shooting" src="shoot.png">
+            <p id="ppg">N/A PPG</p>
+            <p id="ppg2">N/A PPG</p>
+
+            <br>
+            <img id="passing" src="pass.png">
+            <p id="apg">N/A APG</p>
+            <p id="apg2">N/A APG</p>
+            
+
+            <br>
+            <img id="rebounding" src="rebound.png">
+            <p id="rpg">N/A RPG</p>
+            <p id="rpg2">N/A RPG</p>
+        </div>
+        
+
+
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
